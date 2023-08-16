@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/devchallenge/static/css/main.a3c6a761.css",
-    "main.js": "/devchallenge/static/js/main.50a72599.js",
+    "main.js": "/devchallenge/static/js/main.aa59a12b.js",
     "static/js/787.7020495b.chunk.js": "/devchallenge/static/js/787.7020495b.chunk.js",
     "static/media/local_grocery_store.svg": "/devchallenge/static/media/local_grocery_store.9fd4bd199122f1da94aaf2df596e4343.svg",
     "index.html": "/devchallenge/index.html",
     "main.a3c6a761.css.map": "/devchallenge/static/css/main.a3c6a761.css.map",
-    "main.50a72599.js.map": "/devchallenge/static/js/main.50a72599.js.map",
+    "main.aa59a12b.js.map": "/devchallenge/static/js/main.aa59a12b.js.map",
     "787.7020495b.chunk.js.map": "/devchallenge/static/js/787.7020495b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3c6a761.css",
-    "static/js/main.50a72599.js"
+    "static/js/main.aa59a12b.js"
   ]
 }

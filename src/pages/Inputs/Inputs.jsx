@@ -23,6 +23,10 @@ const Inputs = () => {
         <StyledCode>{`<Input disabled/>`}</StyledCode>
         <Input disabled/>
       </StyledVariantContainer>
+      <StyledVariantContainer>
+        <StyledCode>{`<Input disabled/>`}</StyledCode>
+        <Input disabled/>
+      </StyledVariantContainer>
     </StyledContainer>
   );
 };

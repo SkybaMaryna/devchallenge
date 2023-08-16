@@ -66,7 +66,14 @@ export const StyledInput = styled.input`
   }
 
   &:hover {
-    border-color: #333;
+    border-color: 
+    ${(props) => {
+      if (props.disabled) {
+        return "#E0E0E0";
+      } else {
+        return "#333";
+      }
+    }};
   }
   &:focus {
     border-color: ${(props) => {

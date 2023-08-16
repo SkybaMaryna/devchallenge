@@ -17,15 +17,35 @@ const Inputs = () => {
       </StyledVariantContainer>
       <StyledVariantContainer>
         <StyledCode>{`<Input error/>`}</StyledCode>
-        <Input error/>
+        <Input error />
       </StyledVariantContainer>
       <StyledVariantContainer>
         <StyledCode>{`<Input disabled/>`}</StyledCode>
-        <Input disabled/>
+        <Input disabled />
       </StyledVariantContainer>
-      <StyledVariantContainer>
-        <StyledCode>{`<Input disabled/>`}</StyledCode>
-        <Input disabled/>
+      <StyledVariantContainer
+        style={{ display: "flex", flexDirection: "row", gap: "80px" }}
+      >
+        <div>
+          <StyledCode>{`<Input helperText="Some interesting text"/>`}</StyledCode>
+          <Input helperText="Some interesting text" />
+        </div>
+        <div>
+          <StyledCode>{`<Input helperText="Some interesting text" error/>`}</StyledCode>
+          <Input helperText="Some interesting text" error />
+        </div>
+      </StyledVariantContainer>
+      <StyledVariantContainer
+        style={{ display: "flex", flexDirection: "row", gap: "80px" }}
+      >
+        <div>
+          <StyledCode>{`<Input startIcon/>`}</StyledCode>
+          <Input startIcon />
+        </div>
+        <div>
+          <StyledCode>{`<Input endIcon/>`}</StyledCode>
+          <Input endIcon />
+        </div>
       </StyledVariantContainer>
     </StyledContainer>
   );

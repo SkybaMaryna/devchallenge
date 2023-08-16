@@ -5,6 +5,7 @@ export const StiledLabel = styled.label`
   display: flex;
   flex-direction: column;
   gap: 4px;
+  margin-bottom: 4px;
   color: ${(props) => {
     if (props.error) {
       return "#D32F2F";
@@ -66,8 +67,7 @@ export const StyledInput = styled.input`
   }
 
   &:hover {
-    border-color: 
-    ${(props) => {
+    border-color: ${(props) => {
       if (props.disabled) {
         return "#E0E0E0";
       } else {
@@ -84,4 +84,37 @@ export const StyledInput = styled.input`
       }
     }};
   }
+`;
+
+export const StyledHelperText = styled.p`
+  color: ${(props) => {
+    if (props.error) {
+      return "#D32F2F";
+    } else {
+      return "#828282";
+    }
+  }};
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  transition: color 500ms ease;
+
+  ${StyledDiv}:hover & {
+    color: #333;
+  }
+  ${StyledDiv}:focus-within & {
+    color: ${(props) => {
+      if (props.error) {
+        return "#D32F2F";
+      } else {
+        return "#2962ff";
+      }
+    }};
+  }
+`;
+
+export const getStyledIcon = (component) => styled(component)`
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 `;

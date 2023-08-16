@@ -10,10 +10,18 @@ import Input from "../../components/Input/Input";
 const Inputs = () => {
   return (
     <StyledContainer>
-      <StyledTitle>Buttons</StyledTitle>
+      <StyledTitle>Inputs</StyledTitle>
       <StyledVariantContainer>
         <StyledCode>{`<Input />`}</StyledCode>
         <Input />
+      </StyledVariantContainer>
+      <StyledVariantContainer>
+        <StyledCode>{`<Input error/>`}</StyledCode>
+        <Input error/>
+      </StyledVariantContainer>
+      <StyledVariantContainer>
+        <StyledCode>{`<Input disabled/>`}</StyledCode>
+        <Input disabled/>
       </StyledVariantContainer>
     </StyledContainer>
   );

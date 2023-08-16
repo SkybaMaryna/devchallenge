@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
+import { StiledLabel, StyledDiv, StyledInput } from "./Input.styled";
 
-const Input = () => {
+const Input = ({ label, placeholder, error = false, disabled = false }) => {
   return (
-    <div>Input</div>
-  )
-}
+    <StyledDiv>
+      <StiledLabel label={label} error={error}>
+        {label ? label : "Label"}
+        <StyledInput
+          placeholder={placeholder ? placeholder : "Placeholder"}
+          error={error}
+          disabled={disabled}
+        />
+      </StiledLabel>
+    </StyledDiv>
+  );
+};
 
-export default Input
+export default Input;

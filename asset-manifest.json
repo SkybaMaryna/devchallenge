@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/devchallenge/static/css/main.a3c6a761.css",
-    "main.js": "/devchallenge/static/js/main.aa59a12b.js",
+    "main.css": "/devchallenge/static/css/main.3143c519.css",
+    "main.js": "/devchallenge/static/js/main.897e3052.js",
     "static/js/787.7020495b.chunk.js": "/devchallenge/static/js/787.7020495b.chunk.js",
     "static/media/local_grocery_store.svg": "/devchallenge/static/media/local_grocery_store.9fd4bd199122f1da94aaf2df596e4343.svg",
     "index.html": "/devchallenge/index.html",
-    "main.a3c6a761.css.map": "/devchallenge/static/css/main.a3c6a761.css.map",
-    "main.aa59a12b.js.map": "/devchallenge/static/js/main.aa59a12b.js.map",
+    "main.3143c519.css.map": "/devchallenge/static/css/main.3143c519.css.map",
+    "main.897e3052.js.map": "/devchallenge/static/js/main.897e3052.js.map",
     "787.7020495b.chunk.js.map": "/devchallenge/static/js/787.7020495b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3c6a761.css",
-    "static/js/main.aa59a12b.js"
+    "static/css/main.3143c519.css",
+    "static/js/main.897e3052.js"
   ]
 }

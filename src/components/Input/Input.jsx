@@ -23,6 +23,8 @@ const Input = ({
   value,
   size,
   fullWidth,
+  multiline,
+  row,
 }) => {
   return (
     <StyledDiv>
@@ -36,7 +38,8 @@ const Input = ({
           $endIcon={endIcon}
           defaultValue={value ? value[0]?.toUpperCase() + value?.slice(1) : ""}
           size={size}
-          fullWidth={fullWidth}
+          $fullWidth={fullWidth}
+          rows={multiline ? row : "1"}
         />
         {startIcon && <StyledIconPhone style={{ top: "35px", left: "12px" }} />}
         {endIcon && <StyledIconLock style={{ top: "35px", right: "12px" }} />}

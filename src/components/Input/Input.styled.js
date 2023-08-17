@@ -33,21 +33,22 @@ export const StiledLabel = styled.label`
     }};
   }
 `;
-export const StyledInput = styled.input`
+export const StyledInput = styled.textarea`
+  resize: none;
   width: ${(props) => {
-    if (props.fullWidth) {
+    if (props.$fullWidth) {
       return "100%";
     } else {
       return "200px";
     }
   }};
-  height: ${(props) => {
+  /* height: ${(props) => {
     if (props.size === "sm") {
       return "40px";
     } else {
       return "56px";
     }
-  }};
+  }}; */
   border-radius: 8px;
   border: 1px solid;
   border-color: ${(props) => {
@@ -67,8 +68,20 @@ export const StyledInput = styled.input`
     }
   }};
 
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: ${(props) => {
+    if (props.size === "sm") {
+      return "10px";
+    } else {
+      return "18px";
+    }
+  }};
+  padding-bottom: ${(props) => {
+    if (props.size === "sm") {
+      return "10px";
+    } else {
+      return "18px";
+    }
+  }};
   padding-right: ${(props) => {
     if (props.$endIcon) {
       return "45px";

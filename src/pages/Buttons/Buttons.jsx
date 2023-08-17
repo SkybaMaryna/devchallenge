@@ -87,6 +87,7 @@ const Buttons = () => {
           <Button color="danger" />
         </div>
       </StyledVariantContainer>
+      <p>created by MarynaSkyba - devChallenges.io</p>
     </StyledContainer>
   );
 };

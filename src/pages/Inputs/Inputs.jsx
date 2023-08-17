@@ -67,6 +67,11 @@ const Inputs = () => {
         <StyledCode>{`<Input fullWidth />`}</StyledCode>
         <Input fullWidth />
       </StyledVariantContainer>
+      <StyledVariantContainer>
+        <StyledCode>{`<Input multiline row="4" />`}</StyledCode>
+        <Input multiline row="4" />
+      </StyledVariantContainer>
+      <p>created by MarynaSkyba - devChallenges.io</p>
     </StyledContainer>
   );
 };

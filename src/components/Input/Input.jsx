@@ -21,6 +21,8 @@ const Input = ({
   startIcon,
   endIcon,
   value,
+  size,
+  fullWidth,
 }) => {
   return (
     <StyledDiv>
@@ -33,6 +35,8 @@ const Input = ({
           $startIcon={startIcon}
           $endIcon={endIcon}
           defaultValue={value ? value[0]?.toUpperCase() + value?.slice(1) : ""}
+          size={size}
+          fullWidth={fullWidth}
         />
         {startIcon && <StyledIconPhone style={{ top: "35px", left: "12px" }} />}
         {endIcon && <StyledIconLock style={{ top: "35px", right: "12px" }} />}

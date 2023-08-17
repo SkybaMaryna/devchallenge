@@ -16,22 +16,22 @@ const Inputs = () => {
         <Input />
       </StyledVariantContainer>
       <StyledVariantContainer>
-        <StyledCode>{`<Input error/>`}</StyledCode>
+        <StyledCode>{`<Input error />`}</StyledCode>
         <Input error />
       </StyledVariantContainer>
       <StyledVariantContainer>
-        <StyledCode>{`<Input disabled/>`}</StyledCode>
+        <StyledCode>{`<Input disabled />`}</StyledCode>
         <Input disabled />
       </StyledVariantContainer>
       <StyledVariantContainer
         style={{ display: "flex", flexDirection: "row", gap: "80px" }}
       >
         <div>
-          <StyledCode>{`<Input helperText="Some interesting text"/>`}</StyledCode>
+          <StyledCode>{`<Input helperText="Some interesting text" />`}</StyledCode>
           <Input helperText="Some interesting text" />
         </div>
         <div>
-          <StyledCode>{`<Input helperText="Some interesting text" error/>`}</StyledCode>
+          <StyledCode>{`<Input helperText="Some interesting text" error />`}</StyledCode>
           <Input helperText="Some interesting text" error />
         </div>
       </StyledVariantContainer>
@@ -39,17 +39,33 @@ const Inputs = () => {
         style={{ display: "flex", flexDirection: "row", gap: "80px" }}
       >
         <div>
-          <StyledCode>{`<Input startIcon/>`}</StyledCode>
+          <StyledCode>{`<Input startIcon />`}</StyledCode>
           <Input startIcon />
         </div>
         <div>
-          <StyledCode>{`<Input endIcon/>`}</StyledCode>
+          <StyledCode>{`<Input endIcon />`}</StyledCode>
           <Input endIcon />
         </div>
       </StyledVariantContainer>
       <StyledVariantContainer>
-        <StyledCode>{`<Input value="text"/>`}</StyledCode>
+        <StyledCode>{`<Input value="text" />`}</StyledCode>
         <Input value="text" />
+      </StyledVariantContainer>
+      <StyledVariantContainer
+        style={{ display: "flex", flexDirection: "row", gap: "80px" }}
+      >
+        <div>
+          <StyledCode>{`<Input size="sm" />`}</StyledCode>
+          <Input size="sm" />
+        </div>
+        <div>
+          <StyledCode>{`<Input size="md" />`}</StyledCode>
+          <Input size="md" />
+        </div>
+      </StyledVariantContainer>
+      <StyledVariantContainer>
+        <StyledCode>{`<Input fullWidth />`}</StyledCode>
+        <Input fullWidth />
       </StyledVariantContainer>
     </StyledContainer>
   );

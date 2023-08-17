@@ -34,8 +34,20 @@ export const StiledLabel = styled.label`
   }
 `;
 export const StyledInput = styled.input`
-  width: 200px;
-  height: 56px;
+  width: ${(props) => {
+    if (props.fullWidth) {
+      return "100%";
+    } else {
+      return "200px";
+    }
+  }};
+  height: ${(props) => {
+    if (props.size === "sm") {
+      return "40px";
+    } else {
+      return "56px";
+    }
+  }};
   border-radius: 8px;
   border: 1px solid;
   border-color: ${(props) => {

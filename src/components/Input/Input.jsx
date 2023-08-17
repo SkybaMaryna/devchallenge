@@ -7,29 +7,38 @@ import {
   getStyledIcon,
 } from "./Input.styled";
 import { FaPhoneAlt } from "react-icons/fa";
+import { IoMdLock } from "react-icons/io";
+
+const StyledIconPhone = getStyledIcon(FaPhoneAlt);
+const StyledIconLock = getStyledIcon(IoMdLock);
 
 const Input = ({
   label,
   placeholder,
-  error = false,
-  disabled = false,
+  error,
+  disabled,
   helperText,
   startIcon,
+  endIcon,
+  value,
 }) => {
-  const StyledIconPhone = getStyledIcon(FaPhoneAlt);
   return (
     <StyledDiv>
-      <StiledLabel label={label} error={error}>
+      <StiledLabel label={label} $error={error}>
         {label ? label : "Label"}
         <StyledInput
           placeholder={placeholder ? placeholder : "Placeholder"}
-          error={error}
+          $error={error}
           disabled={disabled}
+          $startIcon={startIcon}
+          $endIcon={endIcon}
+          defaultValue={value ? value[0]?.toUpperCase() + value?.slice(1) : ""}
         />
-        {startIcon && <StyledIconPhone />}
+        {startIcon && <StyledIconPhone style={{ top: "35px", left: "12px" }} />}
+        {endIcon && <StyledIconLock style={{ top: "35px", right: "12px" }} />}
       </StiledLabel>
       {helperText && (
-        <StyledHelperText error={error}>{helperText}</StyledHelperText>
+        <StyledHelperText $error={error}>{helperText}</StyledHelperText>
       )}
     </StyledDiv>
   );

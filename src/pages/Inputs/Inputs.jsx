@@ -47,6 +47,10 @@ const Inputs = () => {
           <Input endIcon />
         </div>
       </StyledVariantContainer>
+      <StyledVariantContainer>
+        <StyledCode>{`<Input value="text"/>`}</StyledCode>
+        <Input value="text" />
+      </StyledVariantContainer>
     </StyledContainer>
   );
 };

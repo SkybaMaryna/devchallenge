@@ -5,9 +5,10 @@ export const StiledLabel = styled.label`
   display: flex;
   flex-direction: column;
   gap: 4px;
+  position: relative;
   margin-bottom: 4px;
   color: ${(props) => {
-    if (props.error) {
+    if (props.$error) {
       return "#D32F2F";
     } else {
       return "#333";
@@ -24,7 +25,7 @@ export const StiledLabel = styled.label`
 
   ${StyledDiv}:focus-within & {
     color: ${(props) => {
-      if (props.error) {
+      if (props.$error) {
         return "#D32F2F";
       } else {
         return "#2962ff";
@@ -38,7 +39,7 @@ export const StyledInput = styled.input`
   border-radius: 8px;
   border: 1px solid;
   border-color: ${(props) => {
-    if (props.error) {
+    if (props.$error) {
       return "#D32F2F";
     } else if (props.disabled) {
       return "#E0E0E0";
@@ -53,11 +54,32 @@ export const StyledInput = styled.input`
       return "transparent";
     }
   }};
-  padding: 18px 12px;
+
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: ${(props) => {
+    if (props.$endIcon) {
+      return "45px";
+    } else {
+      return "12px";
+    }
+  }};
+  padding-left: ${(props) => {
+    if (props.$startIcon) {
+      return "45px";
+    } else {
+      return "12px";
+    }
+  }};
   box-sizing: border-box;
   outline: none;
   cursor: pointer;
   transition: border-color 500ms ease;
+
+  color: #333;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
 
   &::placeholder {
     color: #828282;
@@ -77,7 +99,7 @@ export const StyledInput = styled.input`
   }
   &:focus {
     border-color: ${(props) => {
-      if (props.error) {
+      if (props.$error) {
         return "#D32F2F";
       } else {
         return "#2962ff";
@@ -88,7 +110,7 @@ export const StyledInput = styled.input`
 
 export const StyledHelperText = styled.p`
   color: ${(props) => {
-    if (props.error) {
+    if (props.$error) {
       return "#D32F2F";
     } else {
       return "#828282";
@@ -104,7 +126,7 @@ export const StyledHelperText = styled.p`
   }
   ${StyledDiv}:focus-within & {
     color: ${(props) => {
-      if (props.error) {
+      if (props.$error) {
         return "#D32F2F";
       } else {
         return "#2962ff";
@@ -116,5 +138,6 @@ export const StyledHelperText = styled.p`
 export const getStyledIcon = (component) => styled(component)`
   width: 18px;
   height: 18px;
-  fill: currentColor;
+  fill: #828282;
+  position: absolute;
 `;
